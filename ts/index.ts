@@ -15,9 +15,11 @@ form.addEventListener('submit', (event) => {
     console.log(name);
     if (!name) {
         alert('이 모지리 샛기');
-        title.innerHTML = "Password";
+        title.innerHTML = "Enter Password";
         title.style.color = "black";
         stage = 0;
+        bro.width = 0;
+        bro.height = 0;
         return;
     }
     switch (true) {
@@ -54,6 +56,8 @@ form.addEventListener('submit', (event) => {
             title.innerHTML = "Enter Password";
             title.style.color = "black";
             stage = 0;
+            bro.width = 0;
+            bro.height = 0;
             break;
     }
 
