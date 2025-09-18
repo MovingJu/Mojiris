@@ -41,9 +41,15 @@ form.addEventListener('submit', function (event) {
             stage++;
             break;
         case (stage === 3 && name === "again later"):
-            bro.width = 500;
-            bro.height = 500;
+            bro.width = 800;
+            bro.height = 800;
             bro.src = "./image/umm.png";
+            bro.style.position = "absolute";
+            bro.style.top = "50%";
+            bro.style.left = "50%";
+            bro.style.transform = "translate(-50%, -50%)";
+            bro.style.zIndex = "999";
+            bro.style.pointerEvents = "none";
             title.innerHTML = "Enter Password";
             title.style.color = "black";
             stage = 0;
