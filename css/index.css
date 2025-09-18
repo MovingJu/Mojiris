@@ -2,7 +2,7 @@ body {
     display: flex;
     justify-content: center;   /* 가로 가운데 */
     align-items: center;       /* 세로 가운데 */
-    height: 100vh;             /* 화면 전체 높이 */
+    height: 40vh;             /* 화면 전체 높이 */
     margin: 0;
     font-family: sans-serif;
     background: #f5f5f5;
@@ -10,7 +10,8 @@ body {
 .container {
     text-align: center;
     background: white;
-    width: 500px;
+    width: 40%;
+    min-width: 300px;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
